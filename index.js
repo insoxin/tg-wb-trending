@@ -40,7 +40,7 @@ async function sendTgMessage(data) {
   const text = data.splice(1,20).map((o, i) => {
     if (o.promotion) {
       return `💰:[bitcoin:bc1q2lfx6y52p93qwk6y6yhszzfhjdt2anz43xw6ee
-](${o.scheme}) ${(o.desc_extr / 10000).toFixed(2)} 万`
+]() ${(o.desc_extr / 10000).toFixed(2)} 万`
     }
     if (ranks[i]) {
       return `${ranks[i]} [${o.desc}](${o.scheme}) ${(o.desc_extr / 10000).toFixed(2)} 万`
