@@ -66,7 +66,7 @@
       },
       methods: {
         async fetchTodayHots() {
-          const res = await fetch(`https://weibo.juhe.im/api/${dayjs().format('YYYY-MM-DD')}.json`)
+          const res = await fetch(`https://raw.githubusercontent.com/insoxin/tg-wb-trending/master/api/${dayjs().format('YYYY-MM-DD')}.json`)
           const json = await res.json()
           this.hots = json
         },
@@ -76,15 +76,6 @@
       }
     }
     Vue.createApp(RenderHtmlApp).mount('#root')
-  </script>
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?1e3aac9f2e78ab892dff7d517f3ae655";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>    
+  </script>  
 </body>
 </html>
