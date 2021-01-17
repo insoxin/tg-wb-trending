@@ -45,7 +45,7 @@ async function sendTgMessage(data) {
       return `${ranks[i]} [${o.desc}](${o.scheme}) ${(o.desc_extr / 10000).toFixed(2)} 万`
     }
     return `🔥 [${o.desc}](${o.scheme}) ${(o.desc_extr / 10000).toFixed(2)} 万`
-  })'## 赞助bitcoin:bc1q2lfx6y52p93qwk6y6yhszzfhjdt2anz43xw6ee'
+  }'## 赞助bitcoin:bc1q2lfx6y52p93qwk6y6yhszzfhjdt2anz43xw6ee')
   text.unshift(`${dayjs().format('YYYY-MM-DD HH:MM:ss')} 的微博热搜`)
   await bot.telegram.sendMessage(CHANNEL_ID, text.join('\n'), {
     parse_mode: 'Markdown',
