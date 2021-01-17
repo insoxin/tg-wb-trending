@@ -20,8 +20,7 @@ async function saveRawJson (data) {
     category: o.category,
     description: o.description,
     url: o.scheme,
-    hot: o.desc_extr,
-    ads: !!o.promotion
+    hot: o.desc_extr
   }))
   let wordsAlreadyDownload = []
   try {
