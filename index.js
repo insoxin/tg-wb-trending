@@ -29,7 +29,7 @@ async function saveRawJson (data) {
     const content = await fs.readFile(fullPath)
     wordsAlreadyDownload = JSON.parse(content)
   } catch (err) {
-     file not exsit
+     //file not exsit
   }
   const allHots = _.uniqBy(_.concat(words, wordsAlreadyDownload), 'title')
   await fs.writeFile(fullPath, JSON.stringify(allHots))
